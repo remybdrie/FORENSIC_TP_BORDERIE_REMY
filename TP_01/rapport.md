@@ -25,7 +25,8 @@ En utilisant l'argument "strings" sur le fichier USB_Image, ainsi qu'faisant dé
 ..
 JVJV ECRET PNG JVJV [Trash Info] Path=secret.png DeletionDate=2023-02-10T22:21:51 IHDR sRGB gAMA
 
-J'ai utilisé une commande pour tester le disque et donc tenter de récupérer des fichiers puis quelques images ont pu être récupérées. commande : photorec USB.Image 
+J'ai utilisé une commande pour tester le disque et donc tenter de récupérer des fichiers puis quelques images ont pu être récupérées. commande : photorec USB.Image
+Un outil appelé "photorec" permet de récupérer des fichiers supprimés et de les intégrer dans un répertoire afin de les consulter.
 
 Conclusion:
 
