@@ -1,5 +1,8 @@
-Le compte-rendu ci-dessous reprend la méthode d'analyse utilisé afin de récupérer le flag:
 
+
+Le compte-rendu ci-dessous reprend la méthode d'analyse forensique utilisée afin de récupérer le flag:
+
+Introduction:
 
 Dans un 1er temps, il va être nécessaire d'analyser le hash du fichier afin de déterminer si il est légitime ou non.
 
@@ -22,7 +25,9 @@ En utilisant l'argument "strings" sur le fichier USB_Image, ainsi qu'faisant dé
 
 J'ai utilisé une commande pour tester le disque et donc tenter de récupérer des fichiers puis quelques images ont pu être récupérées. commande : photorec USB.Image
 
-Parmis ces images,fichiers (6 au total : 2 jpg, 3 png et 1 fichier ini ) : des photo d'animaux et 2 contenant le contenu suivant : BOSCH {1MAG3}
+Conclusion:
+
+Parmi ces images,fichiers (6 au total : 2 jpg, 3 png et 1 fichier ini ) : des photos d'animaux et 2 contenant le contenu suivant : BOSCH {1MAG3}
 
 Le fichier ini contenait lui : [Trash Info] Path=secret.png DeletionDate=2023-02-10T22:21:51
 
