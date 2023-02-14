@@ -9,6 +9,8 @@ Introduction:
 
 Dans un 1er temps, il va être nécessaire d'analyser le hash du fichier afin de déterminer si il est légitime ou non.
 
+Analyse:
+
 J'ai utilisé la commande suivante:sha256sum USB_Image
 
 Voici ce que cela m'a retourné:
@@ -23,7 +25,7 @@ En utilisant l'argument "strings" sur le fichier USB_Image, ainsi qu'faisant dé
 ..
 JVJV ECRET PNG JVJV [Trash Info] Path=secret.png DeletionDate=2023-02-10T22:21:51 IHDR sRGB gAMA
 
-J'ai utilisé une commande pour tester le disque et donc tenter de récupérer des fichiers puis quelques images ont pu être récupérées. commande : photorec USB.Image
+J'ai utilisé une commande pour tester le disque et donc tenter de récupérer des fichiers puis quelques images ont pu être récupérées. commande : photorec USB.Image 
 
 Conclusion:
 
@@ -32,3 +34,5 @@ Parmi ces images,fichiers (6 au total : 2 jpg, 3 png et 1 fichier ini ) : des ph
 Le fichier ini contenait lui : [Trash Info] Path=secret.png DeletionDate=2023-02-10T22:21:51
 
 Cela m'a donc permis de trouver le flag avec l'utilisation de la commande strings.
+
+Suite à l'analyse de la clé USB, elle ne présente aucun risque SSI. Elle peut donc être branché sans problème sur un ordinateur dédié à cet effet.
