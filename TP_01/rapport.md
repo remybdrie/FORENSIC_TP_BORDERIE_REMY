@@ -19,14 +19,9 @@ J'ai essayé d'en savoir plus sur le format du fichier étant donné que sa tail
 
 file USB_Image : USB_Image: DOS/MBR boot sector, code offset 0x58+2, OEM-ID "MSDOS5.0", sectors/cluster 8, reserved sectors 1418, Media descriptor 0xf8, sectors/track 63, heads 255, hidden sectors 2048, sectors 7677952 (volumes > 32 MB), FAT (32 bit), sectors/FAT 7483, reserved 0x1, serial number 0xa84d68d6, unlabeled
 
-binwalk USB_IMAGE
-
-strings USB.Image :
-
+En utilisant l'argument "strings" sur le fichier USB_Image, ainsi qu'faisant défiler les résultats dans un fichier : j'ai aperçu la ligne : "path=secret.png"
 ..
 JVJV ECRET PNG JVJV [Trash Info] Path=secret.png DeletionDate=2023-02-10T22:21:51 IHDR sRGB gAMA
-
-En utilisant l'argument "strings" sur le fichier USB_Image, ainsi qu'faisant défiler les résultats dans un fichier : j'ai aperçu la ligne : "path=secret.png"
 
 J'ai utilisé une commande pour tester le disque et donc tenter de récupérer des fichiers puis quelques images ont pu être récupérées. commande : photorec USB.Image
 
